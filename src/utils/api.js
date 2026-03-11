@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://syncro-backend-gamma.vercel.app/api",
 });
 
 // 1. REQUEST Interceptor: Attach token before sending the request
