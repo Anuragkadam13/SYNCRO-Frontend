@@ -68,7 +68,7 @@ const AllTask = ({ employees }) => {
 
             {task.proofFile && (
               <a
-                href={`http://localhost:5000/${task.proofFile}`}
+                href={`https://syncro-backend-gamma.vercel.app/api/tasks/view-proof/${task._id}`}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-3 flex items-center text-blue-500 underline text-sm hover:text-blue-400"
