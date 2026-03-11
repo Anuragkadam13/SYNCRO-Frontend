@@ -111,13 +111,13 @@ const TaskList = ({ data, updateUserData }) => {
             );
           }) /* EMPTY STATE: This shows if tasks.length is 0 */
         ) : (
-          <div className="flex flex-col items-center justify-center w-full mt-10 p-10 border-2 border-dashed border-gray-800 rounded-xl bg-[#1c1c1c]">
+          <div className="flex flex-col items-center justify-center w-full mt-5 p-5 ">
             <img
               src={img} // Update this path to your image
               alt="No tasks assigned"
               className="w-64 h-64 object-contain opacity-50 mb-4"
             />
-            <h2 className="text-xl font-semibold text-gray-400">
+            <h2 className="text-xl font-semibold text-gray-800">
               Tasks has never been assigned yet!!!
             </h2>
             <p className="text-gray-600 text-sm mt-2">
