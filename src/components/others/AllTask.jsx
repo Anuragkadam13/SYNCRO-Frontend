@@ -107,10 +107,10 @@ const AllTask = ({ employees }) => {
               alt="No Submissions"
               className="w-16 h-16 grayscale mb-3"
             />
-            <p className="text-lg font-medium text-gray-500 uppercase tracking-widest">
+            <p className="text-lg font-medium text-gray-500 uppercase tracking-widest text-center">
               No submissions from the employees yet...
             </p>
-            <p className="text-xs text-gray-400 italic">
+            <p className="text-xs text-gray-400 italic text-center">
               When employees finish tasks, their proof will appear here.
             </p>
           </div>
