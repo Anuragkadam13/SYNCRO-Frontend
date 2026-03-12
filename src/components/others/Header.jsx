@@ -13,7 +13,7 @@ const Header = (props) => {
         <img
           src={logo}
           alt="Syncro Logo"
-          className="w-12 h-12 object-contain drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
+          className="w-12 h-12 object-contain"
         />
 
         {/* Brand Name and Slogan */}
