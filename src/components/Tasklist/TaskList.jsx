@@ -25,11 +25,14 @@ const TaskList = ({ data, updateUserData }) => {
     const userId = data?._id || data?.id;
 
     if (!userId) return;
+    setLoading(true);
     try {
       const response = await api.get(`/tasks/my-tasks/${userId}`);
       setTasks(response.data);
     } catch (err) {
       console.error("Error fetching tasks");
+    } finally {
+      setLoading(false);
     }
   };
 
