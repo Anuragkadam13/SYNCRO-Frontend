@@ -21,7 +21,7 @@ const Header = (props) => {
           <h1 className="text-3xl font-extrabold tracking-tighter bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent uppercase leading-none">
             Syncro
           </h1>
-          <p className="text-[10px] text-gray-400 font-medium italic tracking-wider">
+          <p className="text-[10px] text-gray-500 font-medium italic tracking-wider">
             Stay in sync, stay ahead
           </p>
         </div>
