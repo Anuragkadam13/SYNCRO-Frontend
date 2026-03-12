@@ -67,6 +67,7 @@ const Register = () => {
           <Input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            minLength={8}
             required
             id="password"
             type="password"

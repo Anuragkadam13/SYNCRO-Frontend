@@ -39,6 +39,7 @@ const Login = ({ handleLogin }) => {
           <Input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            minLength={8}
             type="password"
             id="password"
             placeholder="Enter your password"
