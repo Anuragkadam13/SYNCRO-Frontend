@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between  mx-5">
       {/* Brand Section (Logo + Text Side-by-Side) */}
-      <div className="flex items-center">
+      <div className="flex items-center justify-center sm:justify-start">
         {/* The Logo */}
         <img
           src={logo}
