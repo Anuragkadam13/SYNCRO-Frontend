@@ -18,7 +18,7 @@ const Header = (props) => {
 
         {/* Brand Name and Slogan */}
         <div className="flex flex-col items-start">
-          <h1 className="text-3xl font-extrabold tracking-tighter bg-linear-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent uppercase leading-none">
+          <h1 className="text-3xl font-extrabold tracking-tighter bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent uppercase leading-none">
             Syncro
           </h1>
           <p className="text-[10px] text-gray-400 font-medium italic tracking-wider">
