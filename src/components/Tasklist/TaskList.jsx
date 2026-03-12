@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "../ui/button";
 import { toast } from "sonner";
 import img from "../../assets/NoTaskImg.png";
@@ -18,6 +19,7 @@ const TaskList = ({ data, updateUserData }) => {
   const [tasks, setTasks] = useState([]);
   const [selectedTask, setSelectedTask] = useState(null); // Track which task is being completed
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const fetchMyTasks = async () => {
     const userId = data?._id || data?.id;
@@ -48,6 +50,20 @@ const TaskList = ({ data, updateUserData }) => {
     }
   };
 
+  const TaskSkeleton = () => (
+    <div className="w-100">
+      <Card className="w-full max-w-xs">
+        <CardHeader>
+          <Skeleton className="h-4 w-2/3" />
+          <Skeleton className="h-4 w-1/2" />
+        </CardHeader>
+        <CardContent>
+          <Skeleton className="aspect-video w-full" />
+        </CardContent>
+      </Card>
+    </div>
+  );
+
   return (
     <div id="tasklist">
       <h1 className="text-3xl font-medium flex mt-10 ">
@@ -56,7 +72,9 @@ const TaskList = ({ data, updateUserData }) => {
       </h1>
 
       <div className="flex items-center justify-start gap-5 flex-wrap w-full py-1 mt-2">
-        {tasks?.length > 0 ? (
+        {loading ? ( // Show 3 skeleton cards while loading
+          [1, 2, 3].map((i) => <TaskSkeleton key={i} />)
+        ) : tasks?.length > 0 ? (
           tasks.map((elem, idx) => {
             return (
               <div key={idx} className="w-100 ">
