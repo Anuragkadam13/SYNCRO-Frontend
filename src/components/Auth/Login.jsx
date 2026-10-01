@@ -50,7 +50,7 @@ const Login = ({ handleLogin }) => {
         <p className="text-gray-500 text-sm">
           New here?{" "}
           <Link to="/register" className="text-blue-500 underline">
-            Create an account
+            Create a new account
           </Link>
         </p>
       </form>
